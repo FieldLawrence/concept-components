@@ -1,9 +1,10 @@
-import { Component, PropTypes } from 'react';
+import React, { Component, PropTypes } from 'react';
+import './style.sass';
 
 export class FeedWeights extends Component {
     render() {
         return (
-            <div></div>
+            <div className="feed-weights">{ this.props.children }</div>
         );
     }
 }

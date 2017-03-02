@@ -1,9 +1,10 @@
-import { Component, PropTypes } from 'react';
+import React, { Component, PropTypes } from 'react';
+import './style.sass';
 
 export class ContentFilters extends Component {
     render() {
         return (
-            <div></div>
+            <div className="content-filters">{ this.props.children }</div>
         );
     }
 }

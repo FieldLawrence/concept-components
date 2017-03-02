@@ -5,6 +5,6 @@ import { FeedWeights } from './index';
 storiesOf('FeedWeights')
     .add('default', () => {
         return (
-            <div>Example here</div>
+            <FeedWeights>Implement me!</FeedWeights>
         );
     })

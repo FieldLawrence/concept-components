@@ -7,12 +7,16 @@
 // to "React Create App". This only has babel loader to load JavaScript.
 
 module.exports = {
-  plugins: [
+    plugins: [
     // your custom plugins
-  ],
-  module: {
-    loaders: [
-      // add your custom loaders.
     ],
-  },
+    module: {
+        loaders: [
+            {
+                test: /\.sass$/,
+                loaders: ["style", "css", "sass"],
+                // include: path.resolve(__dirname, '../')
+            },
+        ],
+    },
 };
